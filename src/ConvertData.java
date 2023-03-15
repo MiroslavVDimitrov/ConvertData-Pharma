@@ -76,20 +76,18 @@ public class ConvertData{
 
 
             int counter=0;
-            for (Row row : sheet)     //iteration over row using for each loop
+            for (Row row : sheet)
             {
-                //  маха първи и последен ред
+
                 counter++;
                 if((counter!=1)&&(counter != countedRow)) {
 
 
-                    // брой клетките на РЕДА
                     int countedCell = 0;
-
                     int divisionQantity=1;
                     double divisionPrice=0;
 
-                    for (Cell cell : row)    //iteration over cell using for each loop
+                    for (Cell cell : row)
                     {
                         countedCell++;
                         String wordFromCell="";
